@@ -5,6 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Nicolas Radic</title>
+
+    <meta
+      name="description"
+      content="Portfolio de Nicolas Radic, contient des travaux et informations. Celui-ci est voué à changer occasionnellement."
+    />
+    <!--=============== css  ===============-->
+    <link rel="stylesheet" type="text/css" href="style/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div>
+          <h1 class="header__logo">Nicolas Radic</h1>
+        </div>
+
+        <div class="header__mobile">
+          <button
+            class="header__mobile-close header__mobile-btn"
+            onclick="openNav()"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button
+            class="header__mobile-open header__mobile-btn"
+            onclick="closeNav()"
+          >
+            &times;
+          </button>
+        </div>
+
+        <div class="header__bar">
+          <nav class="header__nav">
+            <ul class="header__nav-links">
+              <li>accueil</li>
+              <li>A propos</li>
+              <li>travaux</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+          <div class="header__switch">
+            <button
+              class="header__mode header__mode--light light"
+              onclick="setTheme('light')"
+              title="Mode clair"
+            >
+              <img
+                src="./assets/logos/soleil.png"
+                alt="soleil"
+                class="header__mode-icon"
+              />
+            </button>
+            <button
+              class="header__mode header__mode--dark dark"
+              onclick="setTheme('dark')"
+              title="Mode sombre"
+            >
+              <img
+                src="./assets/logos/lune.png"
+                alt="lune"
+                class="header__mode-icon"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ------------------ -->
+    <!-- Intro section -->
+    <!-- ------------------ -->
+    <div class="intro">
+      <div class="intro__header-space"></div>
+      <div class="intro__container">
+        <h1 class="intro__title">Nicolas Radic</h1>
+        <p class="intro__txt">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+          neque quae reprehenderit unde saepe fugiat amet consequuntur deserunt
+          voluptatum. Vero iure dolorum ullam odio, officiis debitis at nisi
+          modi temporibus doloremque quaerat sint nulla recusandae fuga sed odit
+          blanditiis expedita. Eveniet asperiores a distinctio soluta odit
+          facere quos eligendi quidem?
+        </p>
+      </div>
+    </div>
+    <!-- ------------------ -->
+    <!-- About section -->
+    <!-- ------------------ -->
+    <div class="about">ABOUT</div>
+
+    <!--=============== js  ===============-->
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
 </html>

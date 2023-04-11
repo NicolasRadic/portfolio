@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root,
+:root.light {
+  --primary-color: #fff;
+  --secondary-color: #1d1f21;
+}
+:root.dark {
+  --primary-color: #1d1f21;
+  --secondary-color: #fff;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Rajdhani", sans-serif;
+}
