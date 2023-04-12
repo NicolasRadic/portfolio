@@ -1,0 +1,43 @@
+.skills {
+  height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+  }
+
+  &__title {
+    font-size: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  &__grid-icons {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(auto, auto);
+    align-items: center;
+  }
+
+  &__icon-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 70px;
+    filter: grayscale(100%);
+  }
+
+  &__icon:hover {
+    filter: grayscale(0%);
+  }
+}

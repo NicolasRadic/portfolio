@@ -1,38 +1,99 @@
 .intro {
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  &__header-space {
-    width: 50%;
-    height: 100%;
-    max-width: 750px;
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px 40px 10px;
+    margin-top: 85px;
+    gap: 40px;
   }
 
-  &__container {
-    height: 100%;
-    width: 50%;
-    max-width: 750px;
+  &__biography {
     display: flex;
     gap: 50px;
+    padding: 0 5px;
     flex-direction: column;
     justify-content: center;
   }
 
+  &__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+  }
+
   &__title {
-    font-size: 55px;
+    font-size: 35px;
     padding-bottom: 10px;
-    padding-left: 30px;
+    text-align: center;
   }
 
   &__txt {
-    padding-right: 50px;
-    font-size: larger;
-    max-width: 700px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
+  // --------------
+  // Desktop screen
+  // --------------
+
   @media screen and (min-width: 1024px) {
+    display: flex;
     flex-direction: row;
+    justify-content: center;
+
+    &__container {
+      width: 100%;
+      height: 100vh;
+      margin-top: 0;
+      max-width: 1440px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px 40px;
+    }
+
+    &__biography {
+      width: 50%;
+    }
+
+    &__picture {
+      width: 50%;
+    }
+
+    &__img {
+      width: 350px;
+      height: 350px;
+      border-radius: 300px;
+      object-fit: cover;
+      padding: 0;
+    }
+
+    &__title {
+      font-size: 45px;
+      padding-bottom: 10px;
+    }
+
+    &__txt {
+      padding-right: 50px;
+      font-size: larger;
+      max-width: 700px;
+    }
   }
 }
