@@ -27,6 +27,7 @@ body {
   position: fixed;
   width: 100%;
   height: auto;
+  z-index: 20;
   top: 0;
   left: 0;
   border-bottom: 1px solid var(--primary-color);
@@ -269,6 +270,10 @@ body {
   gap: 10px;
   justify-content: center;
   align-items: center;
+}
+.skills__icon-card > p {
+  font-weight: bold;
+  font-size: large;
 }
 .skills__icon {
   width: 70px;

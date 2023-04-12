@@ -32,6 +32,11 @@
     align-items: center;
   }
 
+  &__icon-card > p {
+    font-weight: bold;
+    font-size: large;
+  }
+
   &__icon {
     width: 70px;
     filter: grayscale(100%);
