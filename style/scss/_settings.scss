@@ -8,11 +8,13 @@
 :root.light {
   --primary-color: #fff;
   --secondary-color: #1d1f21;
+  --ternary-color: #c59d5f;
   --header-shadow-color: rgb(0 0 0 / 0.1);
 }
 :root.dark {
   --primary-color: #1d1f21;
   --secondary-color: #fff;
+  --ternary-color: #c59d5f;
   --header-shadow-color: rgba(128, 127, 127, 0.1);
 }
 

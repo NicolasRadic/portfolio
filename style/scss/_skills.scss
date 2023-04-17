@@ -1,5 +1,8 @@
 .skills {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &__container {
     display: flex;
@@ -7,6 +10,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
+    max-width: 1440px;
   }
 
   &__title {
@@ -25,10 +29,12 @@
   }
 
   &__icon-card {
+    height: 100%;
     display: flex;
     flex-direction: column;
+
     gap: 10px;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
   }
 
@@ -38,11 +44,41 @@
   }
 
   &__icon {
-    width: 70px;
+    width: 100%;
+
     filter: grayscale(100%);
   }
 
   &__icon:hover {
     filter: grayscale(0%);
+  }
+
+  @media screen and (min-width: 1000px) {
+    &__title {
+      font-size: 35px;
+      padding-bottom: 80px;
+      text-align: center;
+    }
+
+    &__grid-icons {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 50px;
+      grid-auto-rows: minmax(auto, auto);
+      align-items: center;
+    }
+
+    &__icon-card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__icon {
+      width: 100px;
+    }
   }
 }
