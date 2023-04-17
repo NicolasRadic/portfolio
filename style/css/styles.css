@@ -275,7 +275,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 .skills__icon-card > p {
@@ -284,6 +284,8 @@ body {
 }
 .skills__icon {
   width: 100%;
+  height: 5rem;
+  object-fit: contain;
   filter: grayscale(100%);
 }
 .skills__icon:hover {
@@ -312,6 +314,7 @@ body {
   }
   .skills__icon {
     width: 100px;
+    height: 7rem;
   }
 }
 
