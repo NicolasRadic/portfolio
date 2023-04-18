@@ -416,6 +416,8 @@ body {
 }
 .contact__content {
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .contact__link-title {
   font-size: large;
@@ -453,6 +455,25 @@ body {
 }
 .contact__info p {
   text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .contact__title {
+    padding-bottom: 4rem;
+  }
+  .contact__content {
+    flex-direction: row;
+    align-items: end;
+    gap: 5rem;
+    padding-bottom: 5rem;
+  }
+  .contact__cv-section {
+    padding-top: 0;
+  }
+  .contact__info {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
