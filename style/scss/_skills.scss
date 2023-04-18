@@ -52,6 +52,10 @@
     filter: grayscale(0%);
   }
 
+  // --------------
+  // Desktop screen
+  // --------------
+
   @media screen and (min-width: 1000px) {
     &__title {
       font-size: 35px;
