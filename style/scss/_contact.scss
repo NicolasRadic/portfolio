@@ -1,2 +1,71 @@
 .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    padding: 100px 0 0 0;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  &__content {
+    padding-bottom: 2rem;
+  }
+
+  &__link-title {
+    font-size: large;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__logo {
+    width: 40px;
+  }
+
+  &__cv-section {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__cv-link {
+    text-decoration: none;
+    color: var(--ternary-color);
+    font-weight: 700;
+  }
+
+  &__separator {
+    width: 80%;
+  }
+
+  &__info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+
+    p {
+      text-align: center;
+    }
+  }
 }
