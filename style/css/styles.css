@@ -404,6 +404,9 @@ html {
   .projects__card {
     width: 20rem;
   }
+  .projects__card h3 {
+    height: 3.5rem;
+  }
 }
 
 .contact {
