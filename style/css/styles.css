@@ -397,9 +397,6 @@ html {
   font-weight: bolder;
 }
 @media screen and (min-width: 1000px) {
-  .projects__container {
-    height: 100vh;
-  }
   .projects__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;

@@ -30,7 +30,7 @@ function closeNav() {
 
 function scrollFunction(section) {
   const element = document.getElementById(section);
-  if (window.innerWidth < 1000) {
+  if (section === "projects") {
     element.scrollIntoView({ behavior: "smooth" });
   } else {
     element.scrollIntoView({ behavior: "smooth", block: "center" });

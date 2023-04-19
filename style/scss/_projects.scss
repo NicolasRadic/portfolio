@@ -85,10 +85,6 @@
   // --------------
 
   @media screen and (min-width: 1000px) {
-    &__container {
-      height: 100vh;
-    }
-
     &__grid {
       grid-template-columns: repeat(3, 1fr);
       gap: 50px;
