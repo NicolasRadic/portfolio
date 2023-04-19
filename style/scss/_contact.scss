@@ -22,14 +22,17 @@
 
   &__content {
     padding-bottom: 2rem;
+
     display: flex;
     flex-direction: column;
   }
 
   &__link-title {
     font-size: large;
-    padding-bottom: 20px;
+
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   &__links {

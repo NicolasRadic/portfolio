@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -51,10 +51,10 @@
         <div class="header__bar">
           <nav class="header__nav">
             <ul class="header__nav-links">
-              <li>accueil</li>
-              <li>compétences</li>
-              <li>projets</li>
-              <li>Contact</li>
+              <li onclick="scrollFunction('intro')">accueil</li>
+              <li onclick="scrollFunction('skills')">compétences</li>
+              <li onclick="scrollFunction('projects')">projets</li>
+              <li onclick="scrollFunction('contact')">Contact</li>
             </ul>
           </nav>
           <div class="header__switch">
@@ -88,7 +88,7 @@
     <!-- ------------------ -->
     <!-- Intro section -->
     <!-- ------------------ -->
-    <div class="intro">
+    <div id="intro" class="intro">
       <div class="intro__container">
         <div class="intro__biography">
           <h2 class="intro__title">Bonjour, je suis Nicolas Radic</h2>
@@ -117,7 +117,7 @@
     <!-- ------------------ -->
     <!-- Skills section -->
     <!-- ------------------ -->
-    <div class="skills">
+    <div id="skills" class="skills">
       <div class="skills__container">
         <h2 class="skills__title">Compétences</h2>
 
@@ -174,7 +174,7 @@
     <!-- Project section -->
     <!-- ------------------ -->
 
-    <div class="projects">
+    <div id="projects" class="projects">
       <div class="projects__container">
         <h2 class="projects__title">Projets</h2>
         <div class="projects__grid">
@@ -261,13 +261,12 @@
     <!-- Contact section -->
     <!-- ------------------ -->
 
-    <div class="contact">
+    <div id="contact" class="contact">
       <div class="contact__container">
         <h2 class="contact__title">Contact</h2>
-
+        <h4 class="contact__link-title">Liens utiles</h4>
         <div class="contact__content">
           <div>
-            <h4 class="contact__link-title">Liens utiles</h4>
             <div class="contact__links">
               <a href="mailto:nicolas.radic05@gmail.com" target="”_blank”"
                 ><img
