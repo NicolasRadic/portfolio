@@ -22,6 +22,7 @@ body {
   background-color: var(--primary-color);
   color: var(--secondary-color);
   font-family: "Rajdhani", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {

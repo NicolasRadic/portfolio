@@ -44,6 +44,7 @@
 
   &__logo {
     width: 40px;
+    height: 40px;
   }
 
   &__cv-section {
@@ -77,6 +78,10 @@
   @media screen and (min-width: 1000px) {
     &__title {
       padding-bottom: 4rem;
+    }
+
+    &__link-title {
+      padding-top: 1rem;
     }
 
     &__content {
