@@ -363,6 +363,7 @@ html {
   justify-content: center;
   gap: 3rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 .projects__card h3 {
   font-size: 22px;
@@ -401,7 +402,7 @@ html {
   }
   .projects__grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 50px;
   }
   .projects__card {
     width: 20rem;
